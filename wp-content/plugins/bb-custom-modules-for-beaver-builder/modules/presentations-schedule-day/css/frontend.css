@@ -1,0 +1,70 @@
+/* CSS codes form here */
+
+.parent {height: auto; display: flex; flex-wrap: wrap; justify-content: center;}
+.card {display: flex; flex-direction: column; padding: 1rem; justify-content: space-between; width: 250px; text-align: center; align-items: center;}
+.card_image {border-radius: 5px; box-shadow: 0 0 5px 0 rgba(0,0,0,0.15); height: auto;}
+h3.card_speaker_name,
+h3.card_speaker_name_mobile {margin: 8px 0 0 0; font-size: 20px; font-weight: bold; line-height: 1.1em;}
+h4.card_presentation_title {margin-bottom: 5px; font-size: 17px; line-height: 1.1em;}
+.presentation_info {flex-direction: column;}
+h3.card_speaker_name_mobile,
+.presentation_info_mobile {display: none;}
+.speaker_info {position: relative;}
+.featurebadge {position: absolute; top: 0; right: 0; max-width: 90px;}
+
+@media only screen and (max-width: 580px){
+    .presentation_info_mobile {display: block; width: 66%;}
+
+    .card > .card_presentation_title,
+    .card > .more_info_btn,
+    h3.card_speaker_name {display: none;}
+
+    h3.card_speaker_name_mobile {display: block; margin: 5px 0 5px 0;}
+
+    .card {flex-direction: row; width: 100%; text-align: left; justify-content: normal; flex-wrap: wrap; padding: 1rem 0; align-items: flex-start; border-bottom: 1px solid #eee;}
+
+    .speaker_info {width: 30%; margin-right: 3%;}
+
+    .live_presentations_row .card .speaker_info {width: 100%;}
+    .live_presentations_row .card {justify-content: center; text-align: center; max-width: 350px;}
+    .live_presentations_row .card > .card_presentation_title,
+    .live_presentations_row .card > .more_info_btn,
+    .live_presentations_row h3.card_speaker_name {display: block;}
+
+    .featurebadge { max-width: 40px; }
+}
+
+.speakers_5 {max-width: 800px; margin: 0 auto;}
+
+@media only screen and (max-width: 1096px){
+    .speakers_4 {max-width: 700px; margin: 0 auto;}
+}
+
+/*replay section on live page */
+.replay_section .card {width: 200px; justify-content: normal;}
+.replay_section .parent.speakers_5 .card {width: 160px;}
+.live_presentations_row a.cta_btn,
+.live_presentations_row span.cta_btn {font-size: 20px; padding: 5px 15px !important; margin-top: 10px; margin-bottom: 20px; background: #e4e4e4; color: #444; border-bottom: 2px solid #06bf8e;}
+
+/********
+speaker cards sales pages
+*/
+.small_speaker_image {width: 30%; margin-right: 3%; position: relative;}
+.small_presentation_info {display: block; width: 66%;}
+p.small_card_speaker_name {font-size: 1.1em; font-weight: bold; margin-bottom: 3px;}
+p.small_card_speaker_title {font-size: 0.9em; font-weight: normal; margin-bottom: 3px; font-style: italic;}
+.small_card {flex-direction: row; width: 100%; text-align: left; justify-content: normal; flex-wrap: wrap; padding: 0 0 5px; align-items: center; border-bottom: 1px solid #eee; display: flex; margin-bottom: 5px;}
+
+/*************
+Customize registration pop up
+*/
+.pop_up_header h2 {text-align: center; margin-bottom: 10px; text-transform: uppercase; font-weight: bold;}
+.pum-container.popmake,
+body .pum-theme-enterprise-blue .pum-container {padding: 0;}
+.pop_up_header {background: #00104c; color: #fff; padding: 20px 28px 20px 28px;}
+.pop_up_header h2 {color: #fff;}
+.pop_up_body {padding: 10px 28px 30px 28px;}
+body .pum-theme-enterprise-blue .pum-content + .pum-close { font-size: 30px; line-height: 30px; border: none; box-shadow: none; text-shadow: none; background-color: transparent;}
+body .pum-theme-enterprise-blue .pum-container .gform_button {font-size: 24px;}
+.popmake-content .ast-row {padding: 20px;}
+

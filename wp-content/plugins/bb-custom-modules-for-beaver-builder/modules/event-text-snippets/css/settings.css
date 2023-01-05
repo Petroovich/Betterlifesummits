@@ -1,0 +1,21 @@
+.fl-field-control-wrapper {margin-bottom: 10px; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
+.shortcode-input-wrap {position: relative;}
+.shortcode-input-wrap + .fl-field-description {display: block; padding: 5px 50px 5px 10px;}
+.w-38 {width: 38px;}
+.h-38 {height: 38px;}
+.d-none {display: none;}
+.d-block {display: block;}
+.d-flex {display: flex;}
+.flex-row {flex-direction: row;}
+.flex-nowrap {flex-wrap: nowrap;}
+.justify-space-between {justify-content: space-between;}
+.pl-10 {padding-left: 10px;}
+.mt-5 {margin-top: 5px;}
+.cursor-pointer {cursor: pointer;}
+.color-blue {color: var(--accent-color); fill: var(--accent-color);}
+.bg-blue {background-color: var(--accent-color);}
+.active\:bg-blue:active {background-color: var(--accent-color);}
+.active\:color-white:active {color: #fff; fill: #fff;}
+.radius-5 {border-radius: 5px;}
+.copy-notify {padding: 7px 12px; display: none; color: #fff !important; position: absolute; z-index: 2;}
+.copy-notify:before {content: ""; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid var(--accent-color); display: block; position: absolute; top: -5px; left: 5px;}
